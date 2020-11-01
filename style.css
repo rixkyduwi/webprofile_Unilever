@@ -1,0 +1,203 @@
+html {
+  background: #fff;
+  color: #000;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+  }   
+  h1{
+    margin: 0;
+  }
+  p{
+    text-align: 20px;
+    text-size-adjust: inherit;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .zoom-effect {  
+    position: relative;
+    width: 100%;
+    height: 360px;
+    margin: 0 auto;
+    overflow: -moz-hidden-unscrollable;  
+    color: white;
+  }
+  .kotak {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .kotak span{
+    color: white;
+  }
+  .kotak img {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    width: 200px;
+    height: 200px;
+  }
+  .zoom-effect:hover .kotak img {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+  }
+.head{
+  color: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(image/birdview_global_forest_watch_by_ciat_flickr.jpg);
+}
+.karir{
+  color:rgb(22, 20, 161);
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(image/profile1.jpeg );
+}
+.merek{
+  color: white;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url(image/nature-1603498513751-2292.jpg);
+}
+.kontak-kami-lokal{
+  width: 25%;
+  color: blue;
+}
+.kontak-kami-internasional{
+  width: 25%;
+  color: blue;
+}
+.row:after {
+  clear: both;
+}
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+.zoom-icon-effect{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  overflow: visible; 
+}
+.zoom-icon-effect:hover img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+header{
+  background-color:navy;
+  color: white;
+}
+.medsos{
+  display: flex;
+}
+.row{
+width: 100%;
+font-family: sans-serif;
+display: flex;
+justify-content: space-between;
+}
+footer{
+  color: white;
+  background-color:purple;
+}
+footer img{
+  float :right ;
+}
+.lowongan{
+  background-color: rgba(255, 255, 255, 0.637) ;
+  color: black;
+  position: absolute;
+  top: 0;
+  margin-right: 10px;
+  left: 0;
+}
+.menubtn{
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+}
+.menubtn:hover{
+  background-color: #000;
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+button{
+  object-position: right;
+}
+.dropdown-child {
+  display: none;
+  background-color: black;
+  min-width: 200px;
+}
+.dropdown-child a{
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-child{
+  display: inline-flex;
+}
+#cursor-btn {
+  position: absolute;
+  cursor: pointer;
+  z-index:9999;
+  top:85%;
+  left:85%;
+}
+#cursor-btn img {
+  position: fixed;
+  width: 50px;
+}
+th .img{
+  width: 200px;
+  height: 200px;
+}
+table{
+  width: 100%;
+  height: auto;
+}
+table, th, td {
+border-collapse: collapse;
+}
+tr,td,th{
+text-align: left; 
+padding: 8px;
+}
+td {
+border: white;
+width: 200px;
+height: 200px;
+}
+tr:nth-child(odd){
+  background-color: #dddddd;
+  color: blue;
+}
+header img{
+  width: 80px;
+  height: 60px;
+  float: right;
+}

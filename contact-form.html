@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kontak kami</title>
+    <style>
+        button{
+            font-size: 21px;
+            background: green;
+            color: white;
+            border: none;
+            border-radius: 100px;
+            padding: 15px 30px;
+            margin-top: 20px; 
+            margin-bottom: 300px;
+            width: 150px;
+            box-shadow: 10px 10px 22px green ;
+            cursor: pointer;
+            transition: 0.5s all ease;
+        }
+        button:hover{
+            background: white;
+            color : green;
+        }
+        form{
+             display: block;
+        }
+        input{
+            border-radius: 25px  ;
+            padding: 5pt;
+            margin: 20px;
+        }
+        h1{
+            margin-top: 60px;
+        }
+        textarea{
+            border-radius: 25px  ;
+            padding : 5pt;
+            margin: 10px;
+        }
+        body {
+            background-repeat: no-repeat;
+            background-size: 100%;
+        } 
+        html {
+        background: grey;
+        color: #000;
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+}
+    </style>
+</head>
+<body style="background-attachment: fixed; background-position: cover;background-image: url(image/Gradient-Technique-Vector-02.gif)">
+    <div class="contact-form">
+        <a href="main.html">
+           <img src="image/back.svg" style="width: 30px;height: 20px;">Back
+        </a>
+        <center>
+            <h1>Jadilah Mitra Kami</h1>
+                <form>
+                    <input type="text" class="name" placeholder="Enter your name"><br>
+                    <input type="text" class="email" placeholder="Enter your e-mail"><br>
+                    <textarea name="message" id="msg" placeholder="Enter your message here"></textarea><br>
+                    <button type="button" name="submit" id="send" value="Send" onclick="sending()">Send</button>
+                </form>
+        </center>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
