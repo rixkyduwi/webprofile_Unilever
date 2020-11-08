@@ -1,203 +1,250 @@
 html {
-  background: #fff;
-  color: #000;
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  background-color: #dddddd;/*untuk membuat background berwarna putih tulang (#ddddd adl hex codenya)*/
+  color: #000;/*untuk membuat text berwarna hitam (#000 adl hex codenya)*/
+  font-family: sans-serif;/**/
+  -ms-text-size-adjust: 100%;/*agar saat jendela diperkecil/diperbesar semua text di html ukurannya sama persentasinya yaitu 100%*/
+  -webkit-text-size-adjust: 100%;/**/
+  
 }
 body {
-    margin: 0;
-  }   
-  h1{
-    margin: 0;
-  }
-  p{
-    text-align: 20px;
-    text-size-adjust: inherit;
-  }
-  a{
-    color: black;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  a:hover{
-    text-decoration: underline;
-  }
-  .wrapper {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-  }
-  .zoom-effect {  
-    position: relative;
-    width: 100%;
-    height: 360px;
-    margin: 0 auto;
-    overflow: -moz-hidden-unscrollable;  
-    color: white;
-  }
-  .kotak {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .kotak span{
-    color: white;
-  }
-  .kotak img {
-    -webkit-transition: 0.4s ease;
-    transition: 0.4s ease;
-    width: 200px;
-    height: 200px;
-  }
-  .zoom-effect:hover .kotak img {
-    -webkit-transform: scale(1.08);
-    transform: scale(1.08);
-  }
-.head{
-  color: white;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-image: url(image/birdview_global_forest_watch_by_ciat_flickr.jpg);
+  margin: 0;/**/
+}   
+.preloader {
+  position: fixed;/**/
+  top: 0;/**/
+  left: 0;/**/
+  width: 100%;/**/
+  height: 100%;/**/
+  z-index: 9999;/**/
+  background-color: #fff;/**/
 }
-.karir{
-  color:rgb(22, 20, 161);
-  background-attachment: scroll;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(image/profile1.jpeg );
+.preloader .loading {/**/
+  position: absolute;/**/
+  left: 50%;/**/
+  top: 50%;/**/
+  transform: translate(-50%,-50%);/**/
+  font: 14px arial;/**/
 }
-.merek{
-  color: white;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: bottom;
-  background-image: url(image/nature-1603498513751-2292.jpg);
+h1{
+  margin: 10px;/**/
 }
-.kontak-kami-lokal{
-  width: 25%;
-  color: blue;
+p{
+  margin: 10px;/**/
+  text-align: 20px;/**/
+  text-size-adjust: inherit;/**/
 }
-.kontak-kami-internasional{
-  width: 25%;
-  color: blue;
+img{
+  max-width: 100%;
+  max-height: 100%;
 }
-.row:after {
-  clear: both;
-}
-.row:before, .row:after {
-  content: " ";
-  display: table;
-}
-.zoom-icon-effect{
-  position: relative;
-  width: 100%;
-  height: 50px;
-  margin: 0 auto;
-  overflow: visible; 
-}
-.zoom-icon-effect:hover img {
-  -webkit-transform: scale(1.08);
-  transform: scale(1.08);
-}
-header{
-  background-color:navy;
-  color: white;
-}
-.medsos{
-  display: flex;
-}
-.row{
-width: 100%;
-font-family: sans-serif;
-display: flex;
-justify-content: space-between;
-}
-footer{
-  color: white;
-  background-color:purple;
-}
-footer img{
-  float :right ;
-}
-.lowongan{
-  background-color: rgba(255, 255, 255, 0.637) ;
-  color: black;
-  position: absolute;
-  top: 0;
-  margin-right: 10px;
-  left: 0;
+
+a{
+  color: black;/*text menjadi hitam*/
+  text-decoration: none;/**/
+  font-weight: 500;/**/
 }
 .menubtn{
-  background-color: #000;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  padding: 20px;
-}
-.menubtn:hover{
-  background-color: #000;
-}
-.dropdown{
   position: relative;
-  display: inline-block;
+  background-color: white;/*untuk membuat text berwarna hitam (#000 adl hex codenya)*/
+  color: #333333;/*untuk membuat background berwarna hitam (#33333 adl hex indexnya)*/
+  border: none;/**/
+  cursor: pointer;/**/
+  padding: 20px;/**/
+  z-index: 99;/**/
 }
-button{
-  object-position: right;
+.menubtn:hover{ /*:hover berfungsi saat pointer masuk ke menu akan berubah seperti dibawah ini*/
+  background-color: #000;/*untuk membuat text berwarna hitam (#000 adl hex codenya)*/
+  color: white; /*unutuk membuat tulisan berwarna putih*/
+  margin: 0 ;/**/
 }
-.dropdown-child {
-  display: none;
-  background-color: black;
-  min-width: 200px;
+.sidemenu{
+  position: relative;/**/
+  display: inline-block;/**/
 }
-.dropdown-child a{
-  color: white;
-  padding: 20px;
-  text-decoration: none;
-  display: block;
+.sidemenu-child {
+  display: none;/**/
+  background-color: black;/*untuk membuat text berwarna hitam*/
+  min-width: 200px;/**/
 }
-.dropdown:hover .dropdown-child{
-  display: inline-flex;
+.sidemenu-child a{
+  color: white;/*untuk membuat background berwarna putih*/
+  padding: 20px;/**/
+  text-decoration: none;/**/
+  display: block;/**/
+  margin: 0;/**/
+}
+.sidemenu-child li{
+  color: white;/*untuk membuat background berwarna putih*/
+  display: block;/**/
+  margin: 0;/**/
+}
+.sidemenu:hover .sidemenu-child{
+  display: inline-flex;/**/
+  margin: 0 ;/**/
 }
 #cursor-btn {
-  position: absolute;
-  cursor: pointer;
-  z-index:9999;
-  top:85%;
-  left:85%;
+  position: absolute;/**/
+  cursor: pointer;/**/
+  z-index:9;/*untuk membuat layer cursor-btn menjadi layer ke 9 yg berarti diatas semua layer yg ada di div tsb*/
+  top:85%;/*untuk membuat posisi curson-btn menjadi 85% kebawah dari garis sisi atas*/
+  left:85%;/*untuk membuat posisi curson-btn menjadi 85% kekanan dari garis sisi kiri*/
 }
 #cursor-btn img {
-  position: fixed;
-  width: 50px;
+  position: fixed;/**/
+  width: 70px;/**/
 }
-th .img{
-  width: 200px;
-  height: 200px;
-}
-table{
-  width: 100%;
-  height: auto;
-}
-table, th, td {
-border-collapse: collapse;
-}
-tr,td,th{
-text-align: left; 
-padding: 8px;
-}
-td {
-border: white;
-width: 200px;
-height: 200px;
-}
-tr:nth-child(odd){
-  background-color: #dddddd;
-  color: blue;
+header{
+  background-color:navy;/*untuk membuat background color berwarna biru laut*/
+  color: white;/*untuk membuat text berwarna putih*/
 }
 header img{
-  width: 80px;
-  height: 60px;
-  float: right;
+  width: 80px;/**/
+  height: 61px;/**/
+  float: right;/**/
+}
+.wrapper {
+  width: 100%;/**/
+  margin: 0 auto;/**/
+  display: flex;/**/
+}
+.zoom-effect {  
+  position: relative;/**/
+  width: 100%;/**/
+  height: 360px;/**/
+  margin: 0 auto;/**/
+  overflow: -moz-hidden-unscrollable;  /**/
+  color: white;/*untuk membuat text berwarna putih*/
+}
+.kotak span{
+  color: black;/*untuk membuat text berwarna hitam*/
+}
+.kotak img{
+  -webkit-transition: 0.4s ease;/**/
+  transition: 0.4s ease;/**/
+  width: 200px;/**/
+  height: 200px;/**/
+  border-radius: 25px;/**/
+  margin-bottom: 10px;/**/
+  
+}
+.zoom-effect:hover .kotak img {/**/
+  -webkit-transform: scale(1.08);/**/
+  transform: scale(1.08);/**/
+}
+.head{
+  color: #333333;/*untuk membuat text berwarna hitam dengan transparansi 50%*/
+  background-attachment: fixed;/**/
+  background-repeat: no-repeat;/**/
+  background-size: 100%;/**/
+  padding: 10px;/**/
+  background-image: url(image/background1.jpg);/**/
+  max-width: 100%;
+}
+.head h1{
+  margin: 0px;/**/
+}
+.head .kotak {
+  position: absolute;/*untuk membuat posisi .head .kotak mejadi diatas tidak terhalang objek lain*/
+  top: 0;/**/
+  left: 0;/**/
+  padding: 15px;/*untuk memberi jarak didalam semua sisi 15 px*/
+  text-align: center;/*untuk membuat text rata tengah*/
+  background-color:  white;/*untuk membuat text berwarna putih*/
+  border-radius: 25px;/*untuk membuat rounder sebesar 25px*/
+  margin: 5px;/*untuk membuat jarak diluar sisi kanan kiri atas bawah */
+}
+.karir{
+  padding-top: 3px;/*untuk membuat jarak di dalam sisi atas3px dari h1 */
+  color:blue;/*untuk membuat text berwarna biru*/
+  background-position: center;/*unutk membuat posisi gambar berada di tengah*/
+  background-size: cover;/*untu membuat ukuran background menutupi semua sisi div karir*/
+  background-image: url(image/profile1.jpeg );/*untuk menambahkan gambar profil1.png mejadi background*/
+  max-width: 100%;
+}
+.karir .lowongan{
+  padding: 15px;/*untuk memberi jarak didalam semua sisi 15 px*/
+  text-align: left;/*untuk membuat tulisan rata kiri*/
+  border-radius: 25px;/*untuk membuat rounder 25px*/
+  margin: 5px;/*untuk membuar jarak diluar sisi atas dan bawah automatis mengikuti lebar jendela dan jarak luar sisi kanan dan kiri berjarak 70px*/
+  background-color: rgba(255, 255, 255, 0.637) ;/*untuk membuat background berwarna putih dengan transparansi 60%*/
+  color: black;/*untuk membuat text berwarna hitam*/
+}
+.merek{
+  padding-top: 3px;/**/
+  color: white;/*untuk membuat text berwarna putih*/
+  background-attachment: fixed;/**/
+  background-size: cover;/**/
+  background-position: bottom;/**/
+  background-image: url(image/nature-1603498513751-2292.jpg);/**/
+}
+.kontak-kami-lokal{
+  width: 25%;/**/
+  color: blue;/*untuk membuat text berwarna biru*/
+}
+.kontak-kami-internasional{
+  width: 25%;/**/
+  color: blue;/*untuk membuat text berwarna biru*/
+}
+.row{
+  width: 100%;/**/
+  font-family: sans-serif;/**/
+  display: flex;/**/
+  justify-content: space-between;/**/
+  background-color: #dddddd;/*untuk membuat background berwarna putih tulang*/
+}
+.row:after {
+  clear: both;/**/
+}
+.row:before, .row:after {
+  content: " ";/**/
+  display: table;/**/
+}
+.zoom-icon-effect{
+  position: relative;/**/
+  width: 100%;/**/
+  height: 50px;/**/
+  margin: 0 auto;/**/
+  overflow: visible; /**/
+}
+.zoom-icon-effect:hover img {
+  -webkit-transform: scale(1.08);/**/
+  transform: scale(1.08);/**/
+}
+.medsos{
+  display: flex;/**/
+}
+table{
+  width: 100%;/**/
+  height: auto;/**/
+}
+table, th, td {
+border-collapse: collapse;/**/
+}
+tr,td,th{
+text-align: left; /**/
+padding: 8px;/**/
+}
+tr:nth-child(odd){
+  background-color: #dddddd;/*untuk membuat background berwarna putih tulang*/
+  color: blue;/*untuk membuat text berwarna biru*/
+}
+td {
+width: 200px;/**/
+height: 200px;/**/
+}
+th .img{
+  width: 200px;/**/
+  height: 200px;/**/
+}
+footer{
+  padding-left: 10px;
+  color: white;/*untuk membuat text berwarna putih*/
+  background-color:purple;/*untuk membuat text berwarna ungu*/
+}
+footer img{
+  float :right;/**/
+  width:300px; /**/
+  height:200px;/**/
+  max-width: 100%;
+  max-height: 100%;
 }
