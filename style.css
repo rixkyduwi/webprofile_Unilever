@@ -4,11 +4,12 @@ html {
   font-family: sans-serif;/**/
   -ms-text-size-adjust: 100%;/*agar saat jendela diperkecil/diperbesar semua text di html ukurannya sama persentasinya yaitu 100%*/
   -webkit-text-size-adjust: 100%;/**/
-  
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;/**/
 }   
+
 h1{
   margin: 10px;/**/
 }
@@ -34,7 +35,6 @@ a{
   border: none;/**/
   cursor: pointer;/**/
   padding: 20px;/**/
-  z-index: 99;/**/
 }
 .menubtn:hover{ /*:hover berfungsi saat pointer masuk ke menu akan berubah seperti dibawah ini*/
   background-color: #000;/*untuk membuat text berwarna hitam (#000 adl hex codenya)*/
@@ -82,9 +82,9 @@ header{
   color: white;/*untuk membuat text berwarna putih*/
 }
 header img{
-  width: 80px;/**/
-  height: 61px;/**/
-  float: right;/**/
+  width: 80px;/*untuk membuat ukuran panjang sepanjang80px */
+  height: 61px;/*unutk membuat lebar 61px*/
+  float: right;/*untuk membuat img berapa di pojok kanan atas karena sebagai logo */
 }
 .wrapper {
   width: 100%;/**/
@@ -99,6 +99,10 @@ header img{
   overflow: -moz-hidden-unscrollable;  /**/
   color: white;/*untuk membuat text berwarna putih*/
 }
+.zoom-effect:hover .kotak img {/**/
+  -webkit-transform: scale(1.08);/**/
+  transform: scale(1.08);
+}
 .kotak span{
   color: black;/*untuk membuat text berwarna hitam*/
 }
@@ -108,12 +112,7 @@ header img{
   width: 200px;/**/
   height: 200px;/**/
   border-radius: 25px;/**/
-  margin-bottom: 10px;/**/
-  
-}
-.zoom-effect:hover .kotak img {/**/
-  -webkit-transform: scale(1.08);/**/
-  transform: scale(1.08);/**/
+  margin-bottom: 10px;/**/ 
 }
 .head{
   color: #333333;/*untuk membuat text berwarna hitam dengan transparansi 50%*/
@@ -123,6 +122,7 @@ header img{
   padding: 10px;/**/
   background-image: url(image/background1.jpg);/**/
   max-width: 100%;
+  z-index: 4;
 }
 .head h1{
   margin: 0px;/**/
@@ -152,6 +152,7 @@ header img{
   margin: 5px;/*untuk membuar jarak diluar sisi atas dan bawah automatis mengikuti lebar jendela dan jarak luar sisi kanan dan kiri berjarak 70px*/
   background-color: rgba(255, 255, 255, 0.637) ;/*untuk membuat background berwarna putih dengan transparansi 60%*/
   color: black;/*untuk membuat text berwarna hitam*/
+  z-index: 4;
 }
 .merek{
   padding-top: 3px;/**/
@@ -160,6 +161,7 @@ header img{
   background-size: cover;/**/
   background-position: bottom;/**/
   background-image: url(image/nature-1603498513751-2292.jpg);/**/
+  z-index: 4;
 }
 .kontak-kami-lokal{
   width: 25%;/**/
@@ -224,11 +226,12 @@ footer{
   padding-left: 10px;
   color: white;/*untuk membuat text berwarna putih*/
   background-color:purple;/*untuk membuat text berwarna ungu*/
+  padding-bottom: 7px;
 }
 footer img{
   float :right;/**/
-  width:300px; /**/
-  height:200px;/**/
-  max-width: 100%;
-  max-height: 100%;
+  width:25%; /**/
+  height:25%;/**/
+  max-width: 100%;/**/
+  max-height: 100%;/**/
 }
